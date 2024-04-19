@@ -1,0 +1,626 @@
+html{
+ scroll-behavior: smooth;
+}
+a{
+    text-decoration: none !important;
+}
+/* company */
+.od-weight {
+    font-weight: bold !important;
+}
+.od-h3-header{
+    color: #FEA116;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    max-width: 100%;
+}
+h2.od-style {
+    text-align: center;
+    color: #0F172B;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    transition: 0.5s;
+    letter-spacing: 3px;
+}
+h2.od-style:hover{
+    transform: scale(1.1);
+   
+}
+h2.od-style::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f79400;
+   
+}
+h2.od-style::before{
+    content: "";
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 4px solid #f79400;
+}
+/* end company */
+/* nav bar */
+
+.navbar-nav,
+.dropdown-menu{
+    font-size: 20px;
+}
+.navbar-nav{
+    font-weight: bold;
+}
+.nav-item.active a{
+    color: #fea116 !important; 
+  
+}
+a.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: #FEA116;
+    padding-left: 5px;
+}
+i.fa-solid{
+    font-size: 50px;
+}
+.navbar{
+    background-color: #0F172B !important;
+}
+.navbar-nav a{
+    color: white !important;
+}
+.dropdown-menu{
+    background-color: #0F172B !important;
+}
+.dropdown-menu a:hover{
+    background-color: gray !important;
+}
+
+@media (min-width: 992px) {
+    .navbar-dark {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      background-color: transparent !important;
+        
+    }
+    
+   
+   
+   
+}
+
+
+
+/* landing */
+.landing{
+    background: linear-gradient(rgba(15, 23, 43, 0.712), rgba(15, 23, 43, 0.774)), url(../images/bg-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landing h2{
+font-weight: bold;
+}
+.landing p{
+    line-height: 1.8;
+    text-align: justify;
+}
+.landing a{
+    background-color: #FEA116;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 16px;
+   
+}
+.landing a:hover{
+transform: scale(1.1);
+}
+.od-login{
+    padding: 10px 100px !important;
+}
+.landing img{
+    animation: rotate 20s linear infinite;
+    transform: rotate(360deg);
+    transition: 0.5s;
+    
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media (max-width:720px) {
+    .landing img{
+        display: none;
+    }
+    .landing p{
+        max-width: 300px;
+    }
+}
+
+ /* services */
+.od-service-item i{
+    color: #FEA116 !important;
+    transition: 0.5s;
+}
+
+.od-service-item{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.od-service-item:hover{
+ background-color: #FEA116;
+ box-shadow: 0px 0px 10px 0px #0F172B;
+ transform: scale(1.1);
+} 
+@media (max-width:768px) {
+    .od-service-item:hover{
+        background-color: #FEA116;
+        box-shadow: 0px 0px 10px 0px #0F172B;
+        transform: scale(1.05);
+       } 
+}
+.od-service-item:hover i{
+    color: white !important;
+}
+/* about */
+.About{
+    background-color: #0F172B;
+}
+.od-about i,
+.od-about h5,
+.od-about h2{
+    color: #FEA116 !important;
+} 
+.od-about a{
+    background-color: #FEA116;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.od-about a:hover{
+    transform: scaleY(1.1);
+}
+.od-about h2{
+    margin-left: 10px;
+}
+.od-about .od-ab-p{
+text-align: justify;
+line-height: 1.8;
+color: white;
+}
+.About img.od-im-two{
+    margin-top: 25%;
+}
+ .od-style.color{
+    color: white ;
+}
+.About .od-about .od-text{
+   color: white;
+}
+.od-bg-ol{
+    background-color: transparent !important;
+}
+.od-bg-a{
+    background-color: transparent !important;
+    color: #FEA116 !important;
+    font-size: 16px !important;
+}
+
+.od-color-li{
+color: white !important;
+font-size: 16px !important;
+}
+.od-transform{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.od-transform:hover{
+   
+    transform: scale(1.1);
+    opacity: 1;
+   
+}
+/* menu */
+.od-menu-color{
+    color: #FEA116 !important;
+}
+.od-menu-text{
+    color: black;
+    padding-left: 5px;
+}
+.nav-pills .nav-item .active {
+    border-bottom: 2px solid #FEA116;
+    margin-left: 0 !important;
+
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+   width: fit-content;
+   margin: auto;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 40px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #FEA116;    
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #FEA116;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+  }
+  .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  /* Style the close button */
+  .topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+  }
+  
+  .topright:hover {
+    color: red;
+}
+.od-menu-img{
+width: 80px;
+}
+.od-i-color{
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0F172B;
+  text-align: center;
+  line-height: 1.4 !important;
+}
+.od-h3{
+    margin: 30px 0px;
+    color: #FEA116;
+}
+.od-bg-transform{
+    transition: 0.5s;
+}
+.od-bg-transform:hover{
+    background-color: #FEA116;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+/* booking */
+@media (min-width:762px) {
+    .od-img-booking{
+        height: 100vh;
+    }
+}
+@media (max-width:992px) {
+    .od-img-booking{
+        margin-bottom: 10px;
+    }
+}
+
+.od-bg-booking{
+    background-color: #0F172B;
+}
+.section-title{
+    color: #FEA116;
+}
+.od-btn-color {
+    background-color: #FEA116;
+    font-size: 25px;    
+    font-weight: bolder;
+    color: white;
+}
+@media (max-width:992px) {
+    .od-btn-color{
+       margin-bottom: 20px;
+    }
+}
+.od-scale-btn{
+    transition: 0.5s;
+}
+.od-scale-btn:hover{
+   opacity: 0.9;
+    transform: scaleY(1.1);
+
+}
+/* team */
+.od-circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    transition: 0.5s;
+   
+}
+.od-bg-team{
+    background-color: #0F172B;
+    padding: 10px;
+    color: white;
+    border-radius: 6px !important;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    
+}
+.od-bg-team:hover .od-circle{
+transform: scale(1.1);
+}
+.btn-square{
+ background-color: #FEA116;
+ color: white;
+ transition: 0.5s;
+ border-bottom-right-radius:50px;
+ border-bottom-left-radius:50px;
+}
+.od-bg-team:hover .od-i-team{
+ height: 100%;
+} 
+.od-i-team{
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+}
+
+/* testimonial */
+.carousel .carousel-item {
+	color: #777;
+	overflow: hidden;
+	min-height: 120px;
+	font-size: 13px;
+}
+@media (min-width:772px) {
+   
+}
+.carousel .media {
+   max-width: 100%;
+     border-bottom: 2px solid #FEA116;
+     padding: 40px;
+    
+  }
+  @media (max-width:768px) {
+    .carousel .media {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+         
+       }
+       .carousel .media img{
+        margin-bottom: 15px;
+       }
+  }
+
+.carousel .media img {
+	width: 80px;
+	height: 80px;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 0 15px 0 60px ;
+	position: relative;
+}
+.carousel .testimonial::before {
+	content: "\201C";
+	font-family: Arial,sans-serif;
+	color: #FEA116;
+	font-weight: bold;
+	font-size: 68px;
+	line-height: 54px;
+	position: absolute;
+	left: 15px;
+	top: 0;
+}
+
+.carousel .carousel-indicators {
+	bottom: -60px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 1px 3px;
+	box-sizing: border-box;
+}
+.carousel-indicators li {	
+	background: #0F172B;
+	border: 4px solid #fff;
+    
+}
+.carousel-indicators li.active {
+	color: #fff;
+	background: #FEA116;    
+	border: 5px double;    
+}
+.rate .filled {
+    color: #ffc107 !important;
+}
+.od-size-test {
+    font-size: 60px;
+}
+
+/* footer */
+.footer{
+    background-color: #0F172B !important;
+}
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F1F8FF;
+    border: 1px solid #F1F8FF;
+    border-radius: 35px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: #FEA116 !important;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f101";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #FEA116 !important;
+}
+
+.footer .btn.btn-link:hover {
+   transform: translateX(10px);
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: #F1F8FF;
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+.od-i-footer{
+    padding-right: 10px ;
+    color: #FEA116 !important;
+}
+.od-position-relative{
+    position:  relative !important;
+}
+.od-position{
+    position: absolute !important;
+    top: -2px;
+    right: 5px;
+    background-color: #FEA116;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.od-position:hover {
+    background-color: #0F172B;
+}
+.section-title{
+    color: #FEA116 !important;
+}
+/* btn top */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 999; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #FEA116; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #0f172b; /* Add a dark-grey background on hover */
+}
+/* contact */
+.od-color-contact{
+    color: #FEA116 !important;
+    margin: 5px !important;
+}
+.od-bg-btn{
+    background-color: #FEA116 !important;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    margin: 20px 0px;   
+    transition: 0.5s;
+}
+.od-bg-btn:hover{
+    background-color: #0F172B !important;
+    transform: scaleY(1.1);
+}
+.od-label{
+    color: white !important;
+    margin: 10px 3px;
+    font-weight: 500;
+}

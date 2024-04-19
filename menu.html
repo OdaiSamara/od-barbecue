@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grill Restaurant">
+    <meta name="keywords" content=" restaurant food grill snack">
+    <meta name="author" content="odai sa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bs4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/resturant.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>menu</title>
+</head>
+<body>
+ <!-- nav -->
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-stroopwafel fa-2xs" style="color: #fea116;"></i>
+        <h1>BarBecue</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Pages
+                </a>
+                <div class="dropdown-menu  ">
+                    <a class="dropdown-item" href="Booking.html">Booking</a>
+                    <a class="dropdown-item" href="Our Team.html">Our Team</a>
+                    <a class="dropdown-item" href="Testimonial.html">Testimonial</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+ <!-- landing -->
+<div class="container-xxl mb-5 py-5  landing">
+    <div class="container text-center py-5 my-5 ">
+        <h1 class="display-3 text-white mb-3 od-weight ">Food Menu</h1>
+        <nav class="" aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase od-bg-ol">
+                <li class="breadcrumb-item"><a  href="#" class="od-bg-a">Home</a></li>
+                <li class="breadcrumb-item"><a  href="#" class="od-bg-a">Pages</a></li>
+                <li class="breadcrumb-item text-white active od-color-li" aria-current="page">menu</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+ <!-- menu -->
+ <div class="container py-5 menu">
+    <div class="container">
+        <h2 class="od-style mb-5 ">menu</h2>
+        <!-- Tab content -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Breakfast')" id="defaultOpen">
+                <i class="fa fa-coffee fa-2x od-i-color"></i>
+                Breakfast</button>
+            <button class="tablinks" onclick="openCity(event, 'Launch')">
+                <i class="fa fa-hamburger fa-2x od-i-color "></i>
+                Launch</button>
+            <button class="tablinks" onclick="openCity(event, 'Dinner')">
+                <i class="fa fa-utensils fa-2x od-i-color"></i>
+                Dinner</button>
+        </div>
+
+        <div id="Breakfast" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h3 class="od-h3">Breakfast </h3>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform ">
+                        <img class="od-menu-img" src="images/menu-1.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                <span class="pl-3">Chicken Burger</span>
+                                <span class="text-primary">$100</span>
+                            </h5>
+                            <small class=" pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-2.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Meat and Eggs</span>
+                                <span class="text-primary">$115</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-3.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3  ">Chicken Pizza</span>
+                                <span class="text-primary">$150</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-4.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Steaks</span>
+                                <span class="text-primary">$60</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-5.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Appetizers</span>
+                                <span class="text-primary">$50</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-6.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Meat and potatoes</span>
+                                <span class="text-primary">$115</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-7.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Pizza</span>
+                                <span class="text-primary">$30</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-8.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Peef</span>
+                                <span class="text-primary">$105</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Launch" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h3 class="od-h3">Launch </h3>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform ">
+                        <img class="od-menu-img" src="images/menu-1.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                <span class="pl-3">Chicken Burger</span>
+                                <span class="text-primary">$100</span>
+                            </h5>
+                            <small class=" pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-2.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Meat and Eggs</span>
+                                <span class="text-primary">$115</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-3.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3  ">Chicken Pizza</span>
+                                <span class="text-primary">$150</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-4.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Steaks</span>
+                                <span class="text-primary">$60</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-5.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Appetizers</span>
+                                <span class="text-primary">$50</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-6.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Meat and potatoes</span>
+                                <span class="text-primary">$115</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-7.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Pizza</span>
+                                <span class="text-primary">$30</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-8.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Peef</span>
+                                <span class="text-primary">$105</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Dinner" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h3 class="od-h3">Dinner</h3>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform ">
+                        <img class="od-menu-img" src="images/menu-1.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                <span class="pl-3">Chicken Burger</span>
+                                <span class="text-primary">$100</span>
+                            </h5>
+                            <small class=" pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-2.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Meat and Eggs</span>
+                                <span class="text-primary">$115</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-3.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3  ">Chicken Pizza</span>
+                                <span class="text-primary">$150</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-4.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Steaks</span>
+                                <span class="text-primary">$60</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-5.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Appetizers</span>
+                                <span class="text-primary">$50</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-6.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Meat and potatoes</span>
+                                <span class="text-primary">$115</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-7.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Pizza</span>
+                                <span class="text-primary">$30</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-2 od-bg-transform">
+                        <img class="od-menu-img" src="images/menu-8.jpg" alt="">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span class="pl-3">Peef</span>
+                                <span class="text-primary">$105</span>
+                            </h5>
+                            <small class="pl-3">Ipsum ipsum clita erat amet dolor justo diam</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 ">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Reservation</a>
+                <a class="btn btn-link" href="">Privacy Policy</a>
+                <a class="btn btn-link" href="">Terms & Condition</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3 od-i-footer"></i>123 Street, Syria, Swida</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3 od-i-footer" ></i>+963 935694650</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3 od-i-footer"></i>odesamara99@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                <p>09AM - 09PM</p>
+                <h5 class="text-light fw-normal">Sunday</h5>
+                <p>10AM - 08PM</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="od-position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn  py-2 od-position mt-2 me-2">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="copyright">
+            <div class="row ">
+                <div class="col-md-6 text-left  mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+                    
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">Odai-Sa</a>
+                </div>
+                <div class="col-md-6 text-right ">
+                    <div class="footer-menu">
+                        <a href="">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+ <!-- btn top -->
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+
+    
+    <script src="js/j-resturant.js"></script>
+    <script src="js/top.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bs4/js/bootstrap.min.js"></script>
+</body>
+</html>
